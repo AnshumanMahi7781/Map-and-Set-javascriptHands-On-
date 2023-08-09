@@ -14,9 +14,7 @@
 // e=2
 // f=1
 
-let str = "abcadeecfb";
 let ans = new Map();
-// let count = 1;
 for (let char of str) {
     if (ans.has(char)) {
        ans.set(char, ans.get(char)+1)
