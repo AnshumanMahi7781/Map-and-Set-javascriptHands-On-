@@ -3,58 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript - Map And Set - Questions</title>
+    <title>JS Coding Assignments</title>
     <style>
-        .QuestionBox{
-            border: 2px solid black;
-            width: 500px;
-            height: 500px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            background-color: khaki;
-            color: blue;
-            font-size: 22px;
-        }
-        h1{
-            text-align: center;
-        }
-        p{
-            width: 100%;
-            border-bottom: 2px solid red;
-            padding-bottom: 10px;
-            line-height: 30px;
-        }
-        span{
-            color: red;
-            font-weight: bolder;
-        }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+      }
+      header{
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+        border-bottom: 1px solid white;
+        font-size: 22px;
+        font-weight: 700;
+        color: tomato;
+        letter-spacing: 10px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: 1000;
+      }
+      .QuestionAnswereBox{
+        width: 100%;
+        height: 45%;
+        background-color: rgba(255, 255, 255, 0.237);
+        padding: 1em;
+      }
+      .QuestionBox{
+        background-color: rgba(0, 0, 0, 0.366);
+        border-radius: 10px;
+      }
+      .Question{
+        position: relative;
+        width: 100%;
+        color: white;
+        padding: 1em 0em;
+        padding-left: 5em;
+        font-size: 18px;
+        border-bottom: 2px solid white;
+
+      }
+      .SerialNumber{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: tomato;
+        color: white;
+        height: 100%;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        border-top-left-radius:10px;
+      }
+      .InputText{
+        font-weight: bolder;
+        display: block;
+        margin-top: 20px;
+      }
+      .outputText{
+        display: block;
+        margin-top: 20px;
+        font-weight: bolder;
+      }
+      .Answere{
+        width: 100%;
+      }
+      .Answere img{
+        width: 100%;
+        height: 100%;
+      }
+      .instruction{
+        display: block;
+        margin-top: 15px;
+        color: lightgreen;
+
+      }
     </style>
   </head>
 
   <body>
-    <h1>Open the Console to see the OutPut.</h1>
-   <div class="QuestionBox">
-    <p>
-      <span>Question 1</span> "Problem: You are given a string (STR) of length N,
-      consisting of only the lower case English alphabet. Your task is to remove
-      all the duplicate occurrences of characters in the string. <br><br>
-     <strong>Input:abcadeecfb</strong> <br><br>
-     <strong> Output:abcdef</strong>"
-    </p>
+    <header>JS Coding Assignments- Map & Set</header>
 
-    <p>
-        <span>Question 2</span> You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps) <br><br>
-       <strong>Input:abcadeecfb</strong> <br><br>
-       <strong>Output: a=2 b=2 c=2 d=1 e=2 f=1</strong>
-      </p>
-   </div>
+    <section class="QuestionAnswereBox">
+      <div class="QuestionBox">
+        <h2 class="Question"><span class="SerialNumber">Q1.</span>You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+          Your task is to remove all the duplicate occurrences of characters in the string.
+        <span class="InputText">Input : abcadeecfb</span> <span class="outputText">Output : abcdef</span> <span class="instruction">Open Console to see the Output</span></h2>
+        <div class="Answere">
+          <img src="./CodeSnap/SetJs_CodeSnap.png" alt="Image-Not-Found">
+        </div>
 
+      </div>
+    </section>
 
+    
+    <section class="QuestionAnswereBox">
+      <div class="QuestionBox">
 
-   <script src="./set.js"></script>
-    <script src="./map.js"></script>
+        <h2 class="Question"><span class="SerialNumber">Q2.</span>You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps) <br>
+        <span class="InputText">Input : abcadeecfb</span> <span class="outputText">Output : <pre>
+a=2 
+b=2 
+c=2
+d=1
+e=2
+f=1
+        </pre></span> 
+        <span class="instruction">Open Console to see the Output</span></h2>
+
+        <div class="Answere">
+          <img src="./CodeSnap/mapJs_CodeSnap.png" alt="Image-Not-Found">
+        </div>
+
+      </div>
+    </section>
+
+    
+
+<script src="./set.js"></script>
+<script src="./map.js"></script>
   </body>
 </html>
+
